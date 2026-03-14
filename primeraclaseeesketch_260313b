@@ -1,4 +1,4 @@
-
+//1era parte
 int xprev= 0;
 int yprev= 0;
 int rx= 0;
