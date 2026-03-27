@@ -1,30 +1,22 @@
 void setup() {
-  size(800, 600);
+  size(600, 400);
   background(255);
 }
 
 void draw() {
-
+  
 }
 
 void mousePressed() {
   dibujarFigura(mouseX, mouseY, 80, 80);
 }
 
-void dibujarFigura(float posicionX, float posicionY, float ancho, float alto) {
-  
-  rectMode(CENTER);
-  fill(100, 150, 255);
-  rect(posicionX, posicionY, ancho, alto);
-  
-  fill(255);
-  ellipse(posicionX - ancho * 0.2, posicionY - alto * 0.2, ancho * 0.2, alto * 0.2);
-  ellipse(posicionX + ancho * 0.2, posicionY - alto * 0.2, ancho * 0.2, alto * 0.2);
+void dibujarFigura(float x, float y, float ancho, float alto) {
+  fill(255, 220, 180);
+  ellipse(x, y, ancho, alto);
   fill(0);
-  ellipse(posicionX - ancho * 0.2, posicionY - alto * 0.2, ancho * 0.1, alto * 0.1);
-  ellipse(posicionX + ancho * 0.2, posicionY - alto * 0.2, ancho * 0.1, alto * 0.1);
-  
-  stroke(0);
-  line(posicionX - ancho * 0.2, posicionY + alto * 0.2,
-       posicionX + ancho * 0.2, posicionY + alto * 0.2);
+  ellipse(x - ancho * 0.2, y - alto * 0.2, ancho * 0.1, alto * 0.1);
+  ellipse(x + ancho * 0.2, y - alto * 0.2, ancho * 0.1, alto * 0.1);
+  noFill();
+  arc(x, y + alto * 0.1, ancho * 0.5, alto * 0.4, 0, PI);
 }
