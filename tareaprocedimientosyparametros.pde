@@ -7,10 +7,10 @@ void draw() {
 }
 
 void mousePressed() {
-  dibujarFigura(mouseX, mouseY, 80, 80);
+  lacarita(mouseX, mouseY, 80, 80);
 }
 
-void dibujarFigura(float posicionX, float posicionY, float ancho, float alto) {
+void lacarita(float posicionX, float posicionY, float ancho, float alto) {
   fill(255, 220, 0);
   ellipse(posicionX, posicionY, ancho, alto);
   fill(0);
