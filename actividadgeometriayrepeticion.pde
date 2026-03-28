@@ -9,11 +9,13 @@ void setup() {
 void draw() {
   background(255);
   for (int i = 0; i<cant; i++) {
-//izq
+//izq inferior
     line(0, i*sepy, i*sepx, height);
+//derecho superior
     line(width, i*sepy, i*sepx, 0);
-//derecho
+//izq superior
     line(0, i*sepy, width- i*sepx,0);
+//derecho inferior
     line(width, i*sepy, width- i*sepx,height);
   }
 }
