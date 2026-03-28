@@ -9,8 +9,10 @@ void setup() {
 void draw() {
   background(255);
   for (int i = 0; i<cant; i++) {
+//izq
     line(0, i*sepy, i*sepx, height);
     line(width, i*sepy, i*sepx, 0);
+//derecho
     line(0, i*sepy, width- i*sepx,0);
     line(width, i*sepy, width- i*sepx,height);
   }
