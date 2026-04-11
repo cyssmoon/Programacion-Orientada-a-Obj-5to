@@ -1,5 +1,4 @@
-//no esta terminado, lo termino en casa btw
-
+//no esta terminado
 int col = 20;
 int fil= 20;
 
@@ -18,7 +17,7 @@ void draw(){
    for ( int j=0; j<fil; j++){
     float x= i*tamCol + tamCol/2;
     float y= j*tamCol + tamCol/2;
-    float d= dist //falta mas no me da la cabeza y el tiempo en clase 
+    float d= dist(mouseX, mouseY, x,y); 
    }
   }   
 }
