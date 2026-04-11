@@ -1,4 +1,4 @@
-//no esta terminado
+//no esta terminado, lo termino en casa no doy mas de la cabeza xd
 int col = 20;
 int fil= 20;
 
