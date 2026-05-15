@@ -1,6 +1,6 @@
 PVector pos, vel;
 float d= 40;
-void setuo(){
+void setup(){
 size (800,600);
 pos=new PVector(width/2, height/2);
 vel=new PVector (4,3);
