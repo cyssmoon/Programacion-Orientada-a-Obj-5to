@@ -8,7 +8,13 @@ vel=new PVector (4,3);
 void draw() {
 pos.add(vel);
 vel.rotate(PI/300);
-if()
+if (pos.x + d/2 > width || pos.x - d/2 < 0) {
+    vel.x *= -1;
+  }
+if (pos.y + d/2 > height || pos.y - d/2 < 0) {
+    vel.y *= -1;
+  }
 vel.y= vel.j* -1;
 //println(pos.x,pos.y);
-circoe(pos.x,pos.y,d);
+circle(pos.x,pos.y,d);
+
