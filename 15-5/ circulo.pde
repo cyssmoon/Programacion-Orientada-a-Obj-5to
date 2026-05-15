@@ -6,6 +6,7 @@ pos=new PVector(width/2, height/2);
 vel=new PVector (4,3);
 }
 void draw() {
+background(0); //agrego color xq me pinto
 pos.add(vel);
 vel.rotate(PI/300); //si se lo sacas es recto, es igual
 if (pos.x + d/2 > width || pos.x - d/2 < 0) {
