@@ -7,7 +7,7 @@ vel=new PVector (4,3);
 }
 void draw() {
 pos.add(vel);
-vel.rotate(PI/300);
+vel.rotate(PI/300); //si se lo sacas es recto, es igual
 if (pos.x + d/2 > width || pos.x - d/2 < 0) {
     vel.x =vel.x* -1;
   }
