@@ -18,3 +18,5 @@ if (pos.y + d/2 > height || pos.y - d/2 < 0) {
 //println(pos.x,pos.y);
 circle(pos.x,pos.y,d);
 
+}
+
