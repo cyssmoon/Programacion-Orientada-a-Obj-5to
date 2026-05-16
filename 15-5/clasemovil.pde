@@ -10,6 +10,14 @@ void mostrar(){
 circle(pos.x, pos.y, d);
 }
 void contener(){
+  if(pos.x + d/2 >= width || pos.x - d/2 <= 0){
+    vel.x *= -1;
+  }
+  if(pos.y + d/2 >= height || pos.y - d/2 <= 0){
+    vel.y *= -1;
+  }
+}
+
 }
 void mover(){
 pod.add(vel);
