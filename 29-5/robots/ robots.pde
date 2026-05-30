@@ -1,21 +1,20 @@
-int N = 6;       
-Movil[] fila;          
+Movil[] robots;
+int cant = 10;
 
 void setup() {
   size(800, 600);
-  fila = new Movil[N]; 
-  float separacion = width / N;
-  for (int i = 0; i < N; i++) {
-    float x = separacion * i + separacion / 2; 
-    float y = height / 2;                       
-    fila[i] = new Movil(x, y);
+  robots = new Movil[cant];
+  for (int i = 0; i < cant; i++) {
+    float x = 50 + i * 70; // separación fija
+    float y = height/2;
+    robots[i] = new Movil(x, y);
   }
 }
 
 void draw() {
   background(20);
-  for (int i = 0; i < N; i++) {
-    fila[i].mover();
-    fila[i].mostrar();
+  for (int i = 0; i < cant; i++) {
+    robots[i].mover();
+    robots[i].mostrar();
   }
 }
