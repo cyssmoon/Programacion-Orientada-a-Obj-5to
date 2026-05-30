@@ -1,15 +1,14 @@
 class Movil {
   PVector pos, vel;
-  int r = 30;
-  int fila, columna;
-
-  Movil(int f, int c) {
+  int r = 40;
+  int fila;
+  int columna;
+  
+  Movil(int f, int c, float x, float y) {
     fila = f;
     columna = c;
-    float x = map(columna,0, cols, 0, width)  + celW / 2;
-    float y = map(fila,0, filas, 0, height) + celH / 2;
     pos = new PVector(x, y);
-    vel = new PVector(random(-2, 2), random(-2, 2));
+    vel = new PVector(random(-4, 4), random(-4, 4));
   }
 
   void mover() {
@@ -17,23 +16,20 @@ class Movil {
     contener();
   }
 
-  void mostrar() {
-    fill(100, 180, 255);
-    ellipse(pos.x, pos.y, r, r);
+  void mostrar(){
     fill(255);
-    textAlign(CENTER, CENTER);
-    textSize(10);
-    text("[" + fila + "," + columna + "]", pos.x, pos.y);
+    noStroke();
+    ellipse(pos.x, pos.y, r, r);
   }
 
   void contener() {
-    if (pos.x < 0 || pos.x > width)  { 
-    pos.sub(vel); 
-    vel.x *= -1;
- }
-    if (pos.y < 0 || pos.y > height) { 
-   pos.sub(vel); 
-   vel.y *= -1;
- }
+    if (pos.x < 0 || pos.x > width){
+      pos.sub(vel);
+      vel.x *= -1;
+    }
+    if (pos.y < 0 || pos.y > height){
+      pos.sub(vel);
+      vel.y *= -1;
+    }
   }
 }
