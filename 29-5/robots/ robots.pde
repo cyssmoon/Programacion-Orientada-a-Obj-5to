@@ -1,4 +1,3 @@
-
 int N = 6;       
 Movil[] fila;          
 
