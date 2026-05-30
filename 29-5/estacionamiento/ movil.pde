@@ -4,10 +4,10 @@ class Movil {
   int fila, columna;
 
   Movil(int f, int c) {
-    fila    = f;
+    fila = f;
     columna = c;
-    float x = map(columna, 0, COLS, 0, width)  + celW / 2;
-    float y = map(fila,    0, FILAS, 0, height) + celH / 2;
+    float x = map(columna,0, cols, 0, width)  + celW / 2;
+    float y = map(fila,0, filas, 0, height) + celH / 2;
     pos = new PVector(x, y);
     vel = new PVector(random(-2, 2), random(-2, 2));
   }
@@ -31,6 +31,9 @@ class Movil {
     pos.sub(vel); 
     vel.x *= -1;
  }
-    if (pos.y < 0 || pos.y > height) { pos.sub(vel); vel.y *= -1; }
+    if (pos.y < 0 || pos.y > height) { 
+   pos.sub(vel); 
+   vel.y *= -1;
+ }
   }
 }
