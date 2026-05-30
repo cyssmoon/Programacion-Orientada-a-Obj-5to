@@ -8,7 +8,7 @@ void setup() {
   float separacion = width / N;
   for (int i = 0; i < N; i++) {
     float x = separacion * i + separacion / 2; 
-    float y = height / 2;                       // todos en la línea central
+    float y = height / 2;                       
     fila[i] = new Movil(x, y);
   }
 }
