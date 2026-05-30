@@ -3,19 +3,17 @@ class Movil {
   int r = 40;
   int fila;
   int columna;
-  
-  Movil(int f, int c, float x, float y) {
+
+  Movil(int f, int c, float x, float y){
     fila = f;
     columna = c;
     pos = new PVector(x, y);
     vel = new PVector(random(-4, 4), random(-4, 4));
   }
-
-  void mover() {
+  void mover(){
     pos.add(vel);
     contener();
   }
-
   void mostrar(){
     fill(255);
     noStroke();
