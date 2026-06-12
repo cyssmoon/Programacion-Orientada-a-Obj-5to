@@ -15,4 +15,4 @@ acel.muly(0);//new PVector(0,0);
 pos.add(val);
 contener();
 }
-//esto se agrega a la clase de las bolitas que habiamos hecho.. no me acuerdo que fecha exacta xd.
+//esto se agrega a la clase de las bolitas que habiamos hecho el 15-5
