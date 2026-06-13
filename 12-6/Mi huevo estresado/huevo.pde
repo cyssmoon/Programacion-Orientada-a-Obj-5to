@@ -14,6 +14,7 @@ void setup() {
   bolon= new Movil(100,350);
   bolon.d = 60;
 }
+//una bola sola porque es mi ansiedad al tocar mi huevo
 void draw() {
   float h= m.pos.x;
   float s= m.pos.y;
