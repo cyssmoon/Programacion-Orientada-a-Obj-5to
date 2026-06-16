@@ -1,30 +1,25 @@
-//no terminado aaa
 Movil m;
 Movil otro;
-Movil bola;
-Movil bolon;
-PVector G= new PVector (0,1);
-PVector MXY = new PVector (0,0);
+PVector G = new PVector(0, 0.2); 
 void setup() {
-  //size(800, 600);
-  fullScreen();
-  colorMode(HSB,width);
-  m= new Movil(width/2, height/2);
-  otro= new Movil(200,300);
-  bola= new Movil(600,450);
-  bolon= new Movil(100,350);
-  bolon.d = 60;
+  size(800, 600); 
+  m = new Movil(300, 100);
+  otro = new Movil(500, 100);
+  m.vel = new PVector(3, 0);
+  otro.vel = new PVector(-3, 0);
 }
+
 void draw() {
-  background(200);
-  if(m.chocaConCirculo(otro.pos,20) == true){
-    m.alejar(otro.pos,otro.d/2);
-    otro.alejar(m.pos,m.d/2);
-  }
+  background(50);
   m.agregarFuerza(G);
   otro.agregarFuerza(G);
+  if (m.chocaConCirculo(otro.pos, otro.d)) {
+    m.rebotarYAchicar(otro);
+    otro.rebotarYAchicar(m);
+  }
   m.mover();
   otro.mover();
+  
   m.mostrar();   
   otro.mostrar();
-}      
+}
