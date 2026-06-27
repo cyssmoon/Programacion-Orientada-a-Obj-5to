@@ -2,6 +2,7 @@
 class Pelota {
   PVector pos;
   PVector vel;
+  PVector acel;
   float r = 10;
   color c = color(255);
 
@@ -35,12 +36,28 @@ class Pelota {
   }
 }
 class Barrita {
+  PVector vel;
+  PVector acel;
+  PVector pos;
+
   int tamAlto= 50;
   int tamAncho = 10;
   int c= color(255);
-  
+
   void mostrar() {
     fill(c);
-    rect(width/2,height/2,tamAncho,tamAlto);
+    rect(0+40, height/2 ,tamAncho, tamAlto);
+  }
+
+  void moverArriba() {
+    pos.add(vel);
+    vel.add(acel);
+    vel.y=vel.y*-1;
+  }
+
+  void moverAbajo() {
+    pos.add(vel);
+    vel.add(acel);
+    vel.x=vel.x*-1;
   }
 }
