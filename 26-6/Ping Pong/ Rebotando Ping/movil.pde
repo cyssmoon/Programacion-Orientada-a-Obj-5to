@@ -48,7 +48,10 @@ class Barrita {
     fill(c);
     rect(0+40, height/2 ,tamAncho, tamAlto);
   }
-
+  void mostrarBarrita(){
+  fill(c);
+  rect(width-40, height/2, tamAncho, tamAlto);
+  }
   void moverArriba() {
     pos.add(vel);
     vel.add(acel);
