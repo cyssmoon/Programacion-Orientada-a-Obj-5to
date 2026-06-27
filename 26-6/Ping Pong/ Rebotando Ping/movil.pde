@@ -1,4 +1,4 @@
-//falta la barra y el reinicio
+//falta la barra y el reinicio y teclas como atributo
 class Pelota {
   PVector pos;
   PVector vel;
