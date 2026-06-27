@@ -1,4 +1,4 @@
-//falta la barra y el reinicio y teclas como atributo
+//falta la barra y teclas como atributo
 class Pelota {
   PVector pos;
   PVector vel;
@@ -13,9 +13,7 @@ class Pelota {
   void mover() {
     pos.add(vel);
     rebotar();
-    if( pos.x > width - r || pos.x < r){
-       vel.x=vel.x*-1; 
-      }
+    reinicio();
   }
 
   void mostrar() {
@@ -28,5 +26,10 @@ class Pelota {
     if (pos.y > height - r || pos.y< r) {
       vel.y=vel.y*-1;
     }
+  }
+  void reinicio(){
+    if( pos.x > width - r || pos.x < r){
+      pos= new PVector(width/2, height/2);  
+      }
   }
 }
