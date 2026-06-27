@@ -20,8 +20,8 @@ class Pelota {
     fill(c);
     circle(pos.x, pos.y, r);
   }
-  
-  
+
+
   void rebotar() {
     if (pos.y > height - r || pos.y< r) {
       vel.y=vel.y*-1;
