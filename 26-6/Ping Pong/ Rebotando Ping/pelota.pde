@@ -12,4 +12,5 @@ juguno.mostrar();
 p.rebotar();
 p.mostrar();
 p.rebotar();
+juguno.mostrarBarrita();
 }
