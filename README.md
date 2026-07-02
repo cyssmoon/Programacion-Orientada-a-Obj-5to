@@ -19,7 +19,11 @@
 |May  |Manual de POO                        |
 |May  |Clases, objetos y `PVector`          |
 |May  |Array de objetos 1D / 2D             |
-|May  |Sobreanalizando el sketch            |
+|May  |Sobreanalizando el snake            |
+|Jun  |Clase Movil: PVector, velocidad y contención|
+|Jun  |Array de Movil(es) encadenados       |
+|Jun  |Manual de POO (repaso para evaluación)|
+
 
 -----
 
