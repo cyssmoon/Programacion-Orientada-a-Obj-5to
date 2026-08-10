@@ -1,0 +1,1 @@
+estuvimos platicando del juego.
