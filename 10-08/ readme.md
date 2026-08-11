@@ -1,1 +1,1 @@
-..
+Hicimos pruebas en general para hacer el juego 2D
