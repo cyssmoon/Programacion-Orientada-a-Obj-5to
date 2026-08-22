@@ -2,10 +2,11 @@ PImage img;
 color c;
 void setup(){
 size(800,600);
-img= loadImage("data/descarga.jpg");
+img= loadImage("data/images.jpg");
 noStroke();
 }
 void draw (){
+  for(int i=0; i<100;i++){
 int x= int(random(width));
 int y= int(random(height));
 int t= int(map(mouseY,0,height,0,255));
@@ -14,4 +15,4 @@ color c= img.get(x,y);
 fill(c,t);
 ellipse(x,y,d,d);
 }
-
+}
