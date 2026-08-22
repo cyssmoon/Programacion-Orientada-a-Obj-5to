@@ -1,3 +1,4 @@
+//para colocar la img, se tiene q guardar el archivo en guardar como, ir a sketch despues de hacer lo primero y ir a añadir a archivo y de eso pones el nombre de la img en loadimg con data/ primero
 PImage img;
 color c;
 void setup(){
