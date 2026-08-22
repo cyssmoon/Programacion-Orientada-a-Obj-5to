@@ -3,6 +3,7 @@ color c;
 void setup(){
 size(800,600);
 img= loadImage("data/descarga.jpg");
+noStroke();
 }
 void draw (){
 int x= int(random(width));
@@ -13,4 +14,4 @@ color c= img.get(x,y);
 fill(c,t);
 ellipse(x,y,d,d);
 }
-//agrego noStroke() para q no aparezca en circulos
+
