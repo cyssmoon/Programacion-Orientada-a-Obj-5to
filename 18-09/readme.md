@@ -1,1 +1,1 @@
-expuse el juego 2d
+No vino el profe
