@@ -1,0 +1,1 @@
+exponemos el juego de Cati Bross junto a mi compañera florencia gonzales, la cual se encargo de la parte de diseo del juego, y yo, yasmin luna estanga, encargandome de la parte de codificacion y la base de datos
